@@ -8,17 +8,18 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 1</strong> (total punctaj: 0.5)</summary>
+  <summary><strong>Etapa 1</strong> (total punctaj: 0.7)</summary>
   Cerinte rezolvate:
   <ul>
     <li>(0.05) În scenă trebuie să existe un teren. Nu este obligatorie deplasarea pe teren, poate servi drept peisaj în jurul platformei de joc</li>
-    <li>(0.15) Terenul trebuie să aibă un relief variat(să existe multiple zone joase și înalte). Terenul va avea alocat un material ce cuprinde multiple (minim 3) texturi (de exemplu, textură de iarbă, de nisip, de rocă etc). Texturile asociate trebuie pictate pe teren astfel încât să fie în concordanță cu forma terenului (de exemplu o groapă adâncă va avea textură de rocă și nu cu iarbă/floricele)</li>
-    <li>(0.05) Pe teren trebuie să existe minim o rampă (meniul Sculpt-> ramp)</li>
-    <li>(0.05) Pe teren trebuie să existe două zone simetrice (de exemplu doi munți) (vezi meniul Sculpt-> mirror)</li>
-    <li>(0.05) Obiect cu material transparent</li>
-    <li>(0.05) Obiect cu luciu metalic care reflectă mediul înconjurător</li>
-    <li>(0.05) Existența unui obiect cu culoare emissivă</li>
-    <li>(0.05) Folosirea unui normal map pentru a crea un obiect care dă senzația că are asperități chiar dacă nu și-a modificat vertecșii</li>
+    <li>TODO (0.15) Terenul trebuie să aibă un relief variat(să existe multiple zone joase și înalte). Terenul va avea alocat un material ce cuprinde multiple (minim 3) texturi (de exemplu, textură de iarbă, de nisip, de rocă etc). Texturile asociate trebuie pictate pe teren astfel încât să fie în concordanță cu forma terenului (de exemplu o groapă adâncă va avea textură de rocă și nu cu iarbă/floricele)</li>
+    <li>TODO (0.05) Pe teren trebuie să existe minim o rampă (meniul Sculpt-> ramp)</li>
+    <li>TODO (0.05) Pe teren trebuie să existe două zone simetrice (de exemplu doi munți) (vezi meniul Sculpt-> mirror)</li>
+    <li>(0.05) Obiect cu material transparent - <code>M_TintedGlass</code> </li>
+    <li>(0.05) Obiect cu luciu metalic care reflectă mediul înconjurător - <code>M_Chrome</code> </li>
+    <li>(0.05) Existența unui obiect cu culoare emissivă - <code>M_Headlights</code> + <code>M_Taillights</code></li>
+    <li>(0.2) Simularea unei culori cu sclipici (puncte sclipitoare dispuse în mod aleator) folosind un nod de zgomot și fără folosirea unei texturi externe (adică a unei imagini) - <code>M_EnemyCarPaint</code></li>
+    <li>(0.05) Folosirea unui normal map pentru a crea un obiect care dă senzația că are asperități chiar dacă nu și-a modificat vertecșii - <code>Texturile pentru Landscape</code></li>
   </ul>
 </details>
 
@@ -26,10 +27,10 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
   <summary><strong>Etapa 2</strong> (total punctaj: 0.45)</summary>
   Cerinte rezolvate:
   <ul>
-    <li>(0.1) Realizare pion prin extinderea clasei Pawn sau DefaultPawn</li>
-    <li>(0.05) Pionul/caracterul va avea o cameră (de înregistrare) adăugată în components pentru a urmări pionul în stil first person sau third person.</li>
+    <li>(0.1) Realizare pion prin extinderea clasei Pawn sau DefaultPawn - <code>PlayerCar</code></li>
+    <li>(0.05) Pionul/caracterul va avea o cameră (de înregistrare) adăugată în components pentru a urmări pionul în stil first person sau third person. - <code>PlayerCar</code></li>
     <li>(0.1) Pionul/caracterul trebuie să aibă mișcările pe axe (Axis Mappings) definite în inputs din Project Settings.</li>
     <ul><li>(0.1) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel</li></ul>
-    <li>(0.1) Pionul/caracterul își poate schimba(mări/micșora) viteza de deplasare</li>
+    <li>(0.1) Pionul/caracterul își poate schimba (mări/micșora) viteza de deplasare - <code>PlayerCar</code></li>
   </ul>
 </details>
