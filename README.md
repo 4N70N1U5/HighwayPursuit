@@ -24,7 +24,7 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 2</strong> (total punctaj: 0.45)</summary>
+  <summary><strong>Etapa 2</strong> (total punctaj: 0.65-0.7)</summary>
   Cerinte rezolvate:
   <ul>
     <li>(0.1) Realizare pion prin extinderea clasei Pawn sau DefaultPawn - <code>PlayerCar</code></li>
@@ -33,5 +33,6 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
     <li>(0.1) Pionul/caracterul trebuie să aibă mișcările pe axe (Axis Mappings) definite în inputs din Project Settings.</li>
     <ul><li>(0.1) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel - <code>PlayerCar</code></li></ul>
     <li>(0.1) Pionul/caracterul își poate schimba (mări/micșora) viteza de deplasare - <code>PlayerCar</code></li>
+    <li>(0.05-0.1) Un sistem de calculare a scorului. În funcție de realizările în joc se va calcula un număr care să arate cât de bine s-a descurcat jucătorul. - <code>PlayerCar</code></li>
   </ul>
 </details>
