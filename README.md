@@ -29,8 +29,9 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
   <ul>
     <li>(0.1) Realizare pion prin extinderea clasei Pawn sau DefaultPawn - <code>PlayerCar</code></li>
     <li>(0.05) Pionul/caracterul va avea o cameră (de înregistrare) adăugată în components pentru a urmări pionul în stil first person sau third person. - <code>PlayerCar</code></li>
+    <li>(0.15) Posibilitatea de a schimba din urmărirea first person în third person prin apăsarea unei taste. - <code>Project Settings > Input</code> + <code>PlayerCar</code></li>
     <li>(0.1) Pionul/caracterul trebuie să aibă mișcările pe axe (Axis Mappings) definite în inputs din Project Settings.</li>
-    <ul><li>(0.1) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel</li></ul>
+    <ul><li>(0.1) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel - <code>PlayerCar</code></li></ul>
     <li>(0.1) Pionul/caracterul își poate schimba (mări/micșora) viteza de deplasare - <code>PlayerCar</code></li>
   </ul>
 </details>
