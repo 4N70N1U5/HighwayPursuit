@@ -36,3 +36,52 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
     <li>(0.05-0.1) Un sistem de calculare a scorului. În funcție de realizările în joc se va calcula un număr care să arate cât de bine s-a descurcat jucătorul. - <code>PlayerCar</code></li>
   </ul>
 </details>
+
+<details>
+  <summary><strong>Etapa 3</strong> (total punctaj: )</summary>
+  Cerinte rezolvate:
+  <ul>
+
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Etapa 4</strong> (total punctaj: 0.35)</summary>
+  Cerinte rezolvate:
+  <ul>
+    <li>(0.05) Coordonate,rotații și/sau dimensiuni aleatoare pentru unul sau mai multe obiecte sau pion/caracter - <code>TrafficCones > RotateCones</code></li>
+    <li>(0.3) Comportamente determinate probabilist (0.3 pentru 3 probabilitati). Exemplu: cu o probabilitate de  20% să se genereze elemente de culoare c1, cu o probabilitate de 30% culoare c2 și restul de culoare c3. Se poate alege orice element care să depindă de probabilitate (culoare, locație, formă, tipul de obiect, acțiune desfășurată etc.) - <code>RoadTile > SpawnObstacle</code></li>
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Etapa 5</strong> (total punctaj: )</summary>
+  Cerinte rezolvate:
+  <ul>
+
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Etapa 6</strong> (total punctaj: )</summary>
+  Cerinte rezolvate:
+  <ul>
+
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Etapa 7</strong> (total punctaj: )</summary>
+  Cerinte rezolvate:
+  <ul>
+
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Etapa 10</strong> (total punctaj: )</summary>
+  Cerinte rezolvate:
+  <ul>
+
+  </ul>
+</details>
