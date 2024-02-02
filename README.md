@@ -17,22 +17,24 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
     <li>TODO (0.05) Pe teren trebuie să existe două zone simetrice (de exemplu doi munți) (vezi meniul Sculpt-> mirror)</li>
     <li>(0.05) Obiect cu material transparent - <code>M_TintedGlass</code> </li>
     <li>(0.05) Obiect cu luciu metalic care reflectă mediul înconjurător - <code>M_Chrome</code> </li>
-    <li>(0.05) Existența unui obiect cu culoare emissivă - <code>M_Headlights</code> + <code>M_Taillights</code></li>
+    <li>(0.05) Existența unui obiect cu culoare emissivă - <code>M_Headlights</code>, <code>M_Taillights</code></li>
     <li>(0.2) Simularea unei culori cu sclipici (puncte sclipitoare dispuse în mod aleator) folosind un nod de zgomot și fără folosirea unei texturi externe (adică a unei imagini) - <code>M_EnemyCarPaint</code></li>
     <li>(0.05) Folosirea unui normal map pentru a crea un obiect care dă senzația că are asperități chiar dacă nu și-a modificat vertecșii - <code>Texturile pentru Landscape</code></li>
   </ul>
 </details>
 
 <details>
-  <summary><strong>Etapa 2</strong> (total punctaj: 0.9-0.95)</summary>
+  <summary><strong>Etapa 2</strong> (total punctaj: 1.15-1.2)</summary>
   Cerinte rezolvate:
   <ul>
     <li>(0.1) Realizare pion prin extinderea clasei Pawn sau DefaultPawn - <code>PlayerCar</code></li>
     <li>(0.05) Pionul/caracterul va avea o cameră (de înregistrare) adăugată în components pentru a urmări pionul în stil first person sau third person. - <code>PlayerCar</code></li>
     <li>(0.15) Posibilitatea de a schimba din urmărirea first person în third person prin apăsarea unei taste. - <code>Project Settings > Input</code> + <code>PlayerCar</code></li>
+    <li>(0.15) Crearea unor variabile pentru pion/caracter sau alți actori,  care să reflecte starea jucătorului, anumite proprietăți (Fiecare tip diferit de date din cele enumerate 0.05) - <code>Int, Float - PlayerCar</code>, <code>Array of Transform - RoadTile</code></li>
     <li>(0.1) Pionul/caracterul trebuie să aibă mișcările pe axe (Axis Mappings) definite în inputs din Project Settings.</li>
     <ul><li>(0.1) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel - <code>PlayerCar</code></li></ul>
     <li>(0.1) Pionul/caracterul își poate schimba (mări/micșora) viteza de deplasare - <code>PlayerCar</code></li>
+    <li>(0.1) Se va trata coliziunea pionului/caracterului cu alte obiecte, folosind un box de coliziune. Pionul/caracterul va putea fi capabil să treacă prin anumite obiecte dar nu prin altele (în minim una dintre aceste situații, se vor schimba unul sau mai multe atribute ale pionului/caracterului: de exemplu îi scade sănătatea dacă atinge un inamic) - <code>PlayerCar</code> cu <code>RoadTile</code>, <code>SpeedBump</code>, <code>TrafficCones</code>, <code>Barrier</code></li>
     <li>(0.05-0.1) Un sistem de calculare a scorului. În funcție de realizările în joc se va calcula un număr care să arate cât de bine s-a descurcat jucătorul. - <code>PlayerCar</code></li>
     <li>(0.25) Se va implementa sistemul implicit de damage din Unreal fie asupra pionului/caracterului fie asupra actorilor cu care interacționează jucătorul. Se va folosi metoda ApplyDamage în urma unui eveniment din joc. Cu ajutorul unui eveniment AnyDamage actorul asupra căruia se aplică distrugerea va avea niste parametri afectați. Se va implementa un caz pentru o distrugere cu valoare mică (obiectul își poate schimba culoarea, se poate micșora etc) și un altul pentru o distrugere cu valoare mare (de exemplu obiectul poate să dispară sau să își schimbe culoarea în mod diferit față de damage-ul mic, sau să oferim un mesaj scris pe ecran). - <code>PlayerCar</code></li>
   </ul>
