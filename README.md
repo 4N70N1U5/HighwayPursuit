@@ -8,15 +8,16 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 1</strong> (total punctaj: 0.7)</summary>
+  <summary><strong>Etapa 1</strong> (total punctaj: 0.8)</summary>
   Cerinte rezolvate:
   <ul>
     <li>(0.05) În scenă trebuie să existe un teren. Nu este obligatorie deplasarea pe teren, poate servi drept peisaj în jurul platformei de joc</li>
     <li>TODO (0.15) Terenul trebuie să aibă un relief variat(să existe multiple zone joase și înalte). Terenul va avea alocat un material ce cuprinde multiple (minim 3) texturi (de exemplu, textură de iarbă, de nisip, de rocă etc). Texturile asociate trebuie pictate pe teren astfel încât să fie în concordanță cu forma terenului (de exemplu o groapă adâncă va avea textură de rocă și nu cu iarbă/floricele)</li>
     <li>TODO (0.05) Pe teren trebuie să existe minim o rampă (meniul Sculpt-> ramp)</li>
     <li>TODO (0.05) Pe teren trebuie să existe două zone simetrice (de exemplu doi munți) (vezi meniul Sculpt-> mirror)</li>
-    <li>(0.05) Obiect cu material transparent - <code>M_TintedGlass</code> </li>
-    <li>(0.05) Obiect cu luciu metalic care reflectă mediul înconjurător - <code>M_Chrome</code> </li>
+    <li>(0.05) Obiect cu material transparent - <code>M_TintedGlass</code></li>
+    <li>(0.05) Obiect cu luciu metalic care reflectă mediul înconjurător - <code>M_Chrome</code></li>
+    <li>(0.1) Obiect cu material lucios(care reflectă mediul) pe anumite zone și nelucios pe altele în funcție de un anumit pattern (rezolvarea se va face prin blueprints) - <code>M_Chrome</code></li>
     <li>(0.05) Existența unui obiect cu culoare emissivă - <code>M_Headlights</code>, <code>M_Taillights</code></li>
     <li>(0.2) Simularea unei culori cu sclipici (puncte sclipitoare dispuse în mod aleator) folosind un nod de zgomot și fără folosirea unei texturi externe (adică a unei imagini) - <code>M_EnemyCarPaint</code></li>
     <li>(0.05) Folosirea unui normal map pentru a crea un obiect care dă senzația că are asperități chiar dacă nu și-a modificat vertecșii - <code>Texturile pentru Landscape</code></li>
@@ -24,19 +25,19 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 2</strong> (total punctaj: 1.2-1.25)</summary>
+  <summary><strong>Etapa 2</strong> (total punctaj: 1.2-1.25 + bonus = 1.38-1.4375)</summary>
   Cerinte rezolvate:
   <ul>
-    <li>(0.1) Realizare pion prin extinderea clasei Pawn sau DefaultPawn - <code>PlayerCar</code></li>
-    <li>(0.05) Pionul/caracterul va avea o cameră (de înregistrare) adăugată în components pentru a urmări pionul în stil first person sau third person. - <code>PlayerCar</code></li>
-    <li>(0.15) Posibilitatea de a schimba din urmărirea first person în third person prin apăsarea unei taste. - <code>Project Settings > Input</code> + <code>PlayerCar</code></li>
-    <li>(0.2) Crearea unor variabile pentru pion/caracter sau alți actori,  care să reflecte starea jucătorului, anumite proprietăți (Fiecare tip diferit de date din cele enumerate 0.05) - <code>Int, Float, Vector - PlayerCar</code>, <code>Array of Transform - RoadTile</code></li>
-    <li>(0.1) Pionul/caracterul trebuie să aibă mișcările pe axe (Axis Mappings) definite în inputs din Project Settings.</li>
-    <ul><li>(0.1) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel - <code>PlayerCar</code></li></ul>
-    <li>(0.1) Pionul/caracterul își poate schimba (mări/micșora) viteza de deplasare - <code>PlayerCar</code></li>
-    <li>(0.1) Se va trata coliziunea pionului/caracterului cu alte obiecte, folosind un box de coliziune. Pionul/caracterul va putea fi capabil să treacă prin anumite obiecte dar nu prin altele (în minim una dintre aceste situații, se vor schimba unul sau mai multe atribute ale pionului/caracterului: de exemplu îi scade sănătatea dacă atinge un inamic) - <code>PlayerCar</code> cu <code>RoadTile</code>, <code>SpeedBump</code>, <code>TrafficCones</code>, <code>Barrier</code></li>
-    <li>(0.05-0.1) Un sistem de calculare a scorului. În funcție de realizările în joc se va calcula un număr care să arate cât de bine s-a descurcat jucătorul. - <code>PlayerCar</code></li>
-    <li>(0.25) Se va implementa sistemul implicit de damage din Unreal fie asupra pionului/caracterului fie asupra actorilor cu care interacționează jucătorul. Se va folosi metoda ApplyDamage în urma unui eveniment din joc. Cu ajutorul unui eveniment AnyDamage actorul asupra căruia se aplică distrugerea va avea niste parametri afectați. Se va implementa un caz pentru o distrugere cu valoare mică (obiectul își poate schimba culoarea, se poate micșora etc) și un altul pentru o distrugere cu valoare mare (de exemplu obiectul poate să dispară sau să își schimbe culoarea în mod diferit față de damage-ul mic, sau să oferim un mesaj scris pe ecran). - <code>PlayerCar</code></li>
+    <li>(0.1 + bonus) Realizare pion prin extinderea clasei Pawn sau DefaultPawn - <code>PlayerCar</code></li>
+    <li>(0.05 + bonus) Pionul/caracterul va avea o cameră (de înregistrare) adăugată în components pentru a urmări pionul în stil first person sau third person. - <code>PlayerCar</code></li>
+    <li>(0.15 + bonus) Posibilitatea de a schimba din urmărirea first person în third person prin apăsarea unei taste. - <code>Project Settings > Input</code> + <code>PlayerCar</code></li>
+    <li>(0.2 + bonus) Crearea unor variabile pentru pion/caracter sau alți actori,  care să reflecte starea jucătorului, anumite proprietăți (Fiecare tip diferit de date din cele enumerate 0.05) - <code>Int, Float, Vector - PlayerCar</code>, <code>Array of Transform - RoadTile</code></li>
+    <li>(0.1 + bonus) Pionul/caracterul trebuie să aibă mișcările pe axe (Axis Mappings) definite în inputs din Project Settings.</li>
+    <ul><li>(0.1 + bonus) Se adună la punctaj dacă se poate translata pe minim 2 axe definite astfel - <code>PlayerCar</code></li></ul>
+    <li>(0.1 + bonus) Pionul/caracterul își poate schimba (mări/micșora) viteza de deplasare - <code>PlayerCar</code></li>
+    <li>(0.1 + bonus) Se va trata coliziunea pionului/caracterului cu alte obiecte, folosind un box de coliziune. Pionul/caracterul va putea fi capabil să treacă prin anumite obiecte dar nu prin altele (în minim una dintre aceste situații, se vor schimba unul sau mai multe atribute ale pionului/caracterului: de exemplu îi scade sănătatea dacă atinge un inamic) - <code>PlayerCar</code> cu <code>RoadTile</code>, <code>SpeedBump</code>, <code>TrafficCones</code>, <code>Barrier</code></li>
+    <li>(0.05-0.1 + bonus) Un sistem de calculare a scorului. În funcție de realizările în joc se va calcula un număr care să arate cât de bine s-a descurcat jucătorul. - <code>PlayerCar</code></li>
+    <li>(0.25 + bonus) Se va implementa sistemul implicit de damage din Unreal fie asupra pionului/caracterului fie asupra actorilor cu care interacționează jucătorul. Se va folosi metoda ApplyDamage în urma unui eveniment din joc. Cu ajutorul unui eveniment AnyDamage actorul asupra căruia se aplică distrugerea va avea niste parametri afectați. Se va implementa un caz pentru o distrugere cu valoare mică (obiectul își poate schimba culoarea, se poate micșora etc) și un altul pentru o distrugere cu valoare mare (de exemplu obiectul poate să dispară sau să își schimbe culoarea în mod diferit față de damage-ul mic, sau să oferim un mesaj scris pe ecran). - <code>PlayerCar</code></li>
   </ul>
 </details>
 
@@ -49,19 +50,23 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 4</strong> (total punctaj: 0.35)</summary>
+  <summary><strong>Etapa 4</strong> (total punctaj: 0.6-1.45 + bonus = 0.69-1.6675)</summary>
   Cerinte rezolvate:
   <ul>
-    <li>(0.05) Coordonate,rotații și/sau dimensiuni aleatoare pentru unul sau mai multe obiecte sau pion/caracter - <code>TrafficCones > RotateCones</code></li>
-    <li>(0.3) Comportamente determinate probabilist (0.3 pentru 3 probabilitati). Exemplu: cu o probabilitate de  20% să se genereze elemente de culoare c1, cu o probabilitate de 30% culoare c2 și restul de culoare c3. Se poate alege orice element care să depindă de probabilitate (culoare, locație, formă, tipul de obiect, acțiune desfășurată etc.) - <code>RoadTile > SpawnObstacle</code></li>
+    <li>(0.1-0.5  + bonus) se dă pentru complexitatea construcției scenei (numărul de elemente, modul de așezare, construcții create prin așezarea unor forme elementare pentru a obține forme mai complexe). Folosirea modului Foliage pentru realizarea anumitor zone. - <code>Scena</code>, <code>RoadTile</code></li>
+    <li>(0.1-0.5  + bonus) Se dă pentru generarea prin program a actorilor cu anumite locații, rotații, dimensiuni în scopul de a crea construcții complexe (exemplu: o tablă de șah formată din cubulețe, un labirint, o casă formată din obiecte de tip perete și acoperiș care au fost plasate prin blueprint pentru a obține aspectul de casă). Generarea actorilor în scenă se va face în blueprint cu metode precum Spawn Actor from Class. Minim o caracteristică a actorilor va fi calculată prin blueprint (de exemplu, locația, rotația) - <code>RoadTile</code>, <code>MyGameMode</code></li>
+    <li>(0.05-0.1  + bonus) Folosirea relevantă  a minim unei surse punctiforme de lumină (Point Light). Modificarea (statică, manuală a)  proprietăților acesteia. - <code>StreetLamp</code></li>
+    <li>(0.05 + bonus) Coordonate,rotații și/sau dimensiuni aleatoare pentru unul sau mai multe obiecte sau pion/caracter - <code>TrafficCones > RotateCones</code></li>
+    <li>(0.3 + bonus) Comportamente determinate probabilist (0.3 pentru 3 probabilitati). Exemplu: cu o probabilitate de  20% să se genereze elemente de culoare c1, cu o probabilitate de 30% culoare c2 și restul de culoare c3. Se poate alege orice element care să depindă de probabilitate (culoare, locație, formă, tipul de obiect, acțiune desfășurată etc.) - <code>RoadTile > SpawnObstacle</code></li>
   </ul>
 </details>
 
 <details>
-  <summary><strong>Etapa 5</strong> (total punctaj: )</summary>
+  <summary><strong>Etapa 5</strong> (total punctaj: 0.2-0.5 + bonus = 0.23-0.575)</summary>
   Cerinte rezolvate:
   <ul>
-
+    <li>(0.1  + bonus) Folosirea relevantă a unui eveniment de overlap în cadrul jocului - <code>PlayerCar</code></li>
+    <li>(0.1-0.4  + bonus) Actualizarea datelor pionului/caracterului și/sau actor la coliziune (hit/overlap) Se punctează în functie de complexitatea tratării coliziunii, De exemplu, dacă un actor (poate fi chiar pionul) se află în coliziune cu diferiți actori (su diferite tipuri de actori) să se întâmple acțiuni diferite (de exemplu, la coliziunea cu o bară de energie, bara dispare și pionul câstigă sănătate, dar la coliziunea cu un inamic, inamicul doar îsi schimbă culoarea iar pionul pierde sănătate). - <code>PlayerCar</code></li>
   </ul>
 </details>
 
