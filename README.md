@@ -58,10 +58,11 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 5</strong> (total punctaj: )</summary>
+  <summary><strong>Etapa 5</strong> (total punctaj: 0.2-0.6)</summary>
   Cerinte rezolvate:
   <ul>
-
+    <li>(0.1) Folosirea relevantă a unui eveniment de overlap în cadrul jocului - <code>PlayerCar</code></li>
+    <li>(0.1-0.4) Actualizarea datelor pionului/caracterului și/sau actor la coliziune (hit/overlap) Se punctează în functie de complexitatea tratării coliziunii, De exemplu, dacă un actor(poate fi chiar pionul) se află în coliziune cu diferiți actori (su diferite tipuri de actori) să se întâmple acțiuni diferite (de exemplu, la coliziunea cu o bară de energie, bara dispare și pionul câstigă sănătate, dar la coliziunea cu un inamic, inamicul doar îsi schimbă culoarea iar pionul pierde sănătate. - <code>PlayerCar</code></li>
   </ul>
 </details>
 
