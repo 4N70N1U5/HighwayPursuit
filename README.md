@@ -4,7 +4,7 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 
 <details>
   <summary><strong>Etapa 0</strong> (total punctaj: 0.5)</summary>
-  Descrierea completa a jocului pentru Etapa 0 a proiectului se poate gasi in fisierul Game Description.pdf sau la https://docs.google.com/document/d/1QC1xHeXg0w3rSEy4PTKirOwJG91gTw2B5ftVRt3DVQc/edit?usp=sharing
+  Descrierea completa a jocului pentru Etapa 0 a proiectului se poate gasi in fisierul Game Description.pdf sau pe [Google Drive](https://docs.google.com/document/d/1QC1xHeXg0w3rSEy4PTKirOwJG91gTw2B5ftVRt3DVQc/edit?usp=sharing)
 </details>
 
 <details>
@@ -42,7 +42,7 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 3</strong> (total punctaj: )</summary>
+  <summary><strong>Etapa 3</strong> (total punctaj: 0)</summary>
   Cerinte rezolvate:
   <ul>
 
@@ -50,28 +50,72 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 4</strong> (total punctaj: 0.6-1.45 + bonus = 0.69-1.6675)</summary>
+  <summary><strong>Etapa 4</strong> (total punctaj: 1.75-5.1 + bonus = 2.0125-5.865)</summary>
   Cerinte rezolvate:
   <ul>
-    <li>(0.1-0.5  + bonus) se dă pentru complexitatea construcției scenei (numărul de elemente, modul de așezare, construcții create prin așezarea unor forme elementare pentru a obține forme mai complexe). Folosirea modului Foliage pentru realizarea anumitor zone. - <code>Scena</code>, <code>RoadTile</code></li>
-    <li>(0.1-0.5  + bonus) Se dă pentru generarea prin program a actorilor cu anumite locații, rotații, dimensiuni în scopul de a crea construcții complexe (exemplu: o tablă de șah formată din cubulețe, un labirint, o casă formată din obiecte de tip perete și acoperiș care au fost plasate prin blueprint pentru a obține aspectul de casă). Generarea actorilor în scenă se va face în blueprint cu metode precum Spawn Actor from Class. Minim o caracteristică a actorilor va fi calculată prin blueprint (de exemplu, locația, rotația) - <code>RoadTile</code>, <code>MyGameMode</code></li>
-    <li>(0.05-0.1  + bonus) Folosirea relevantă  a minim unei surse punctiforme de lumină (Point Light). Modificarea (statică, manuală a)  proprietăților acesteia. - <code>StreetLamp</code></li>
+    <li>(0.1-0.5 + bonus) se dă pentru complexitatea construcției scenei (numărul de elemente, modul de așezare, construcții create prin așezarea unor forme elementare pentru a obține forme mai complexe). Folosirea modului Foliage pentru realizarea anumitor zone. - <code>Scena</code>, <code>RoadTile</code></li>
+    <li>(0.1-0.5 + bonus) Se dă pentru generarea prin program a actorilor cu anumite locații, rotații, dimensiuni în scopul de a crea construcții complexe (exemplu: o tablă de șah formată din cubulețe, un labirint, o casă formată din obiecte de tip perete și acoperiș care au fost plasate prin blueprint pentru a obține aspectul de casă). Generarea actorilor în scenă se va face în blueprint cu metode precum Spawn Actor from Class. Minim o caracteristică a actorilor va fi calculată prin blueprint (de exemplu, locația, rotația) - <code>RoadTile</code>, <code>MyGameMode</code></li>
+    <li>(0.2 + bonus) Jocul este multilevel cu hărți diferite. Se trece de la un nivel la altul în urma unor realizări în joc.</li>
+    <li>(4 nivele => 0.4-2 + bonus) se dă până la maxim 0.5 pentru fiecare nivel suplimentar, până la un maxim de 4 nivele (primul nivel este punctat în alte categorii de punctaj) în funcție de complexitatea arhitecturii acestuia (din punct de vedere al terenului, skybox-ului (sau skysphere), luminilor, obiectelor, așezate pe hartă static (cu ajutorul editorului) sau în mod dinamic (prin program) skybox/skysphere, elemente atmosferice etc).</li>
+    <li>(0.2 + bonus) Folosirea de subnivele pentru optimizarea hărții</li>
+    <li>(0.05-0.1 + bonus) Folosirea relevantă a minim unei surse direcționale de lumină (Directional Light). Modificarea (statică, manuală a)  proprietăților acesteia. - <code>MainLevel</code>, <code>MainLevel Blueprint</code></li>
+    <li>(0.05-0.1 + bonus) Folosirea relevantă  a minim unei surse punctiforme de lumină (Point Light). Modificarea (statică, manuală a)  proprietăților acesteia. - <code>StreetLamp</code></li>
+    <li>(0.05-0.1 + bonus) Folosirea relevantă  a minim  unei surse spot de lumină (Spot Light). Modificarea (statică, manuală a)  proprietăților acesteia. - <code>PlayerCar</code></li>
+    <li>(0.1-0.5 + bonus) Modificarea caracteristicilor luminilor (precum culoare/intensitate, faptul că e stinsă/aprinsă) în funcție de evenimente/starea jucătorului/timpul din joc. Se punctează în funcție de numărul de lumini afectate, numărul de tipuri diferite de modificări și complexitatea acestora. - <code>MainLevel Blueprint</code></li>
+    <li>(0.1-0.5 + bonus) Animarea luminilor prin schimbarea direcției pozitiei, distanței de atenuare, în mod treptat si continuu. Se punctează în funcție de numărul de lumini afectate, numărul de tipuri diferite de animatii și complexitatea acestora. - <code>MainLevel Blueprint</code></li>
+    <li>(0.05 + bonus) Generarea unei culori aleatoare aplicate pe un obiect (actor, widget etc) din joc - <code>TrafficCones > SetColors</code></li>
     <li>(0.05 + bonus) Coordonate,rotații și/sau dimensiuni aleatoare pentru unul sau mai multe obiecte sau pion/caracter - <code>TrafficCones > RotateCones</code></li>
     <li>(0.3 + bonus) Comportamente determinate probabilist (0.3 pentru 3 probabilitati). Exemplu: cu o probabilitate de  20% să se genereze elemente de culoare c1, cu o probabilitate de 30% culoare c2 și restul de culoare c3. Se poate alege orice element care să depindă de probabilitate (culoare, locație, formă, tipul de obiect, acțiune desfășurată etc.) - <code>RoadTile > SpawnObstacle</code></li>
   </ul>
 </details>
 
 <details>
-  <summary><strong>Etapa 5</strong> (total punctaj: 0.2-0.5 + bonus = 0.23-0.575)</summary>
+  <summary><strong>Etapa 5</strong> (total punctaj: 1.5-1.8 + bonus = 1.725-2.07)</summary>
   Cerinte rezolvate:
   <ul>
-    <li>(0.1  + bonus) Folosirea relevantă a unui eveniment de overlap în cadrul jocului - <code>PlayerCar</code></li>
-    <li>(0.1-0.4  + bonus) Actualizarea datelor pionului/caracterului și/sau actor la coliziune (hit/overlap) Se punctează în functie de complexitatea tratării coliziunii, De exemplu, dacă un actor (poate fi chiar pionul) se află în coliziune cu diferiți actori (su diferite tipuri de actori) să se întâmple acțiuni diferite (de exemplu, la coliziunea cu o bară de energie, bara dispare și pionul câstigă sănătate, dar la coliziunea cu un inamic, inamicul doar îsi schimbă culoarea iar pionul pierde sănătate). - <code>PlayerCar</code></li>
+    <li>(0.1 + bonus) Folosirea relevantă a unui eveniment de click în cadrul jocului - <code>HealthItem</code></li>
+    <li>(0.1 + bonus) Folosirea relevantă a unui eveniment de begin cursor over în cadrul jocului - <code>HealthItem</code></li>
+    <li>(0.1 + bonus) Folosirea relevantă a unui eveniment de end cursor over în cadrul jocului - <code>HealthItem</code></li>
+    <li>(0.1 + bonus) Folosirea relevantă a unui eveniment de keydown (tastă apăsată) în cadrul jocului - <code>MainLevel Blueprint</code></li>
+    <li>(0.1 + bonus) Folosirea relevantă a unui eveniment de keyup (tastă eliberată) în cadrul jocului</code></li>
+    <li>(0.1 + bonus) Tratatrea unei combinații de taste (dintre o tastă specială - shift, ctrl, alt - și una afișabilă, de exemplu Shift+q, ctrl+w etc.)</code></li>
+    <li>(0.1 + bonus) Folosirea relevantă a unui eveniment de overlap în cadrul jocului - <code>PlayerCar</code></li>
+    <li>(0.1-0.4 + bonus) Actualizarea datelor pionului/caracterului și/sau actor la coliziune (hit/overlap) Se punctează în functie de complexitatea tratării coliziunii, De exemplu, dacă un actor (poate fi chiar pionul) se află în coliziune cu diferiți actori (su diferite tipuri de actori) să se întâmple acțiuni diferite (de exemplu, la coliziunea cu o bară de energie, bara dispare și pionul câstigă sănătate, dar la coliziunea cu un inamic, inamicul doar îsi schimbă culoarea iar pionul pierde sănătate). - <code>PlayerCar</code></li>
+    <li>(0.2 + bonus) Afișarea datei (de exemplu, într-un widget) folosind nodul now și spărgând structura DateTime pe componente. Data se va afișa în format zi/lună/an (iar dacă un număr e sub 10, va fi precedat de cifra 0) - <code>MainMenu</code></li>
+    <li>(0.2 + bonus) Afișarea pe ecran, pe parcursul jocului, a timpului care s-a scurs de la începutul jocului sau de la începutul sesiunii, sau de la un anumit eveniment încolo. - <code>MyGameMode</code>, <code>HUD</code></li>
+    <li>(0.3 + bonus) Pentru o informație de timp (câte secunde mai durează până la un eveniment sau cate secunde au trecut de la un moment t, timpul în loc să se afișeze ca un număr întreg de secunde se va afișa în formatul hh:mm:ss (h - oră, m - minute, s - secunde) . Dacă vreun număr din cele 3 categorii este sub 10, se va afișa precedat de un 0). - <code>MyGameMode</code>, <code>HUD</code></li>
   </ul>
 </details>
 
 <details>
-  <summary><strong>Etapa 6</strong> (total punctaj: )</summary>
+  <summary><strong>Etapa 6</strong> (total punctaj: 2.4-3.3 + bonus = 2.76-3.795)</summary>
+  Cerinte rezolvate:
+  <ul>
+    <li>(0.2 + bonus) La intrarea în joc se va afișa meniul principal al jocului. Jocul nu este pornit (de exemplu, este în pauză) până nu se iese din meniu. - <code>MainMenu</code>, <code>MyGameMode</code></li>
+    <li>(0.05 + bonus) Folosirea unei imagini într-un panou - <code>MainMenu</code></li>
+    <li>(0.05 + bonus) Folosirea panourilor de tip HorizontalBox și/sau VerticalBox - <code>MainMenu</code></li>
+    <li>(0.2 + bonus) Trecerea printre ecranele meniului folosind WidgetSpinner - <code>MainMenu</code></li>
+    <li>(0.2 + bonus)Butonul de pornire a unui joc nou. Butonul va avea un text sugestiv, de exemplu "Start". La intrarea în aplicație, jocul este în pauză, și rămâne așa până îl activează utilizatorul - <code>MainMenu</code></li>
+    <li>(0.1 + bonus) va duce spre un ecran cu un text despre joc care explică povestea/contextul. Ecranul are un buton de revenire la meniul principal. - <code>MainMenu</code></li>
+    <li>(0-0.4 + bonus) Stilizare specială a ecranului cu textul despre joc. Punctajul se dă în funcție de cât de complexă și frumoasă e stilizarea - <code>MainMenu</code></li>
+    <li>(0.1 + bonus) Butonul de ieșire din aplicație (la click pe el se închide jocul) - <code>MainMenu</code></li>
+    <li>(0.1 + bonus) Cu ajutorul unui widget se va crea un meniu afișat pe parcursul jocului care va avea butoanele (punctate suplimentar după cum urmează): - <code>HUD</code>, <code>MyGameMode</code></li>
+    <ul><li>(0.1 + bonus) Pauza - la Click pe el, jocul intră în pauză, iar când dăm iar click pe el reîncepe. Textul butonului ar trebui să difere în tipul pauzei, de exemplu să scrie "Reîncepe" - <code>HUD</code></li></ul>
+    <ul><li>(0.1 + bonus) Un buton de ieșire din joc. - <code>HUD</code></li></ul>
+    <ul><li>(0.2 + bonus) Un buton/shortcut cu tastă care pune în pauză jocul și afișează meniul principal. în această situație meniul trebuie să aibă un buton suplimentar cu textul "Continua". - <code>HUD</code></li></ul>
+    <li>(0.1-0.3 + bonus) Afișarea informațiilor legate de starea jucătorului în timpul jocului. Se punctează în funcție de cât de complexă e afișarea. - <code>HUD</code></li>
+    <li>(0.1 + bonus) Folosirea unei bare de progres în afișarea informațiilor pentru jucător - <code>HUD</code></li>
+    <li>(0.2 + bonus) Opțiunea de a ascunde și reafișa afișajul din timpul jocului, de exemplu, la apăsarea unei taste. - <code>MainLevel Blueprint</code></li>
+    <li>(0.2-0.5 + bonus) Unul sau mai multe ecrane informative care apar în urma unui eveniment sau a unei stări în care ajunge jocul. De exemplu, un ecran în care jucătorul e informat că a intrat într-un nivel nou sau că a "murit". Se punctează în funcție de numarul lor si de complexitatea afișării. - <code>Level Blueprints</code>, <code>LevelXToXScreen</code></li>
+    <li>(0.1 + bonus) Buton de restart într-un ecran informativ, pentru cazul în care jucătorul a murit sau s-a terminat nivelul - <code>GameOverScreen</code></li>
+    <li>(0.1 + bonus) Adăugarea unui sunet în cadrul jocului - <code>SFX</code></li>
+    <li>(0.1 + bonus) Sunetul a apărut în cadrul unui widget în urma unui eveniment (de exemplu, click pe buton) - <code>MainMenu</code>, etc.</li>
+    <li>(0.1 + bonus) Sunetul a apărut în urma unei coliziuni - <code>MyGameMode > GameOver</code></li>
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Etapa 7</strong> (total punctaj: 0)</summary>
   Cerinte rezolvate:
   <ul>
 
@@ -79,15 +123,7 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 7</strong> (total punctaj: )</summary>
-  Cerinte rezolvate:
-  <ul>
-
-  </ul>
-</details>
-
-<details>
-  <summary><strong>Etapa 10</strong> (total punctaj: )</summary>
+  <summary><strong>Etapa 10</strong> (total punctaj: 0)</summary>
   Cerinte rezolvate:
   <ul>
 
