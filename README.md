@@ -1,20 +1,19 @@
-# Highway Pursuit <br/> <sup>Proiect pentru materia *Dezvoltarea Jocurilor cu Unreal Engine 5*</sup> <br/> <sup>Nitoi Antonio, grupa 334</sup>
+# Highway Pursuit <br/> <sup>Proiect pentru materia *Dezvoltarea Jocurilor cu Unreal Engine 5* <br/> Nitoi Antonio, grupa 334</sup>
 
 Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la volanul unei masini vazuta din spate si va trebui sa se mute de pe o banda pe alta, alegand-o pe cea fara obstacole (alte masini, drum in lucru etc.). De asemenea, jucatorul este urmarit de raufacatori, care din cand in cand se vor apropia, jucatorul fiind nevoit sa se apere de ei inainte ca acestia sa-l poata lovi, astfel oprind jocul. Pentru a se apara, jucatorul se va putea folosi de anumite obstacole, dar masina lui va fi de asemenea dotata cu diverse gadget-uri pe care le va putea folosi pe baza de cooldown si/sau colectare de pe traseu pe parcursul jocului. Jocul va respecta principiile de baza ale categoriei infinite runner: jocul nu poate fi castigat, dar se poate urmari un high score cat mai mare, pe masura ce se inainteaza jocul se va mai misca mai rapid, obstacolele din fata vor fi randomizate (optional: la anumite praguri de scor, se vor putea debloca masini noi, peisaje etc.).
 
 <details>
   <summary><strong>Etapa 0</strong> (total punctaj: 0.5)</summary>
-  Descrierea completa a jocului pentru Etapa 0 a proiectului se poate gasi in fisierul Game Description.pdf sau pe [Google Drive](https://docs.google.com/document/d/1QC1xHeXg0w3rSEy4PTKirOwJG91gTw2B5ftVRt3DVQc/edit?usp=sharing)
+  Descrierea completa a jocului pentru Etapa 0 a proiectului se poate gasi in fisierul Game Description.pdf sau pe <a href="https://docs.google.com/document/d/1QC1xHeXg0w3rSEy4PTKirOwJG91gTw2B5ftVRt3DVQc/edit?usp=sharing)">Google Drive</a>
 </details>
 
 <details>
-  <summary><strong>Etapa 1</strong> (total punctaj: 0.8)</summary>
+  <summary><strong>Etapa 1</strong> (total punctaj: 0.75)</summary>
   Cerinte rezolvate:
   <ul>
     <li>(0.05) În scenă trebuie să existe un teren. Nu este obligatorie deplasarea pe teren, poate servi drept peisaj în jurul platformei de joc</li>
-    <li>TODO (0.15) Terenul trebuie să aibă un relief variat(să existe multiple zone joase și înalte). Terenul va avea alocat un material ce cuprinde multiple (minim 3) texturi (de exemplu, textură de iarbă, de nisip, de rocă etc). Texturile asociate trebuie pictate pe teren astfel încât să fie în concordanță cu forma terenului (de exemplu o groapă adâncă va avea textură de rocă și nu cu iarbă/floricele)</li>
-    <li>TODO (0.05) Pe teren trebuie să existe minim o rampă (meniul Sculpt-> ramp)</li>
-    <li>TODO (0.05) Pe teren trebuie să existe două zone simetrice (de exemplu doi munți) (vezi meniul Sculpt-> mirror)</li>
+    <li>(0.15) Terenul trebuie să aibă un relief variat(să existe multiple zone joase și înalte). Terenul va avea alocat un material ce cuprinde multiple (minim 3) texturi (de exemplu, textură de iarbă, de nisip, de rocă etc). Texturile asociate trebuie pictate pe teren astfel încât să fie în concordanță cu forma terenului (de exemplu o groapă adâncă va avea textură de rocă și nu cu iarbă/floricele)</li>
+    <li>(0.05) Pe teren trebuie să existe două zone simetrice (de exemplu doi munți) (vezi meniul Sculpt-> mirror)</li>
     <li>(0.05) Obiect cu material transparent - <code>M_TintedGlass</code></li>
     <li>(0.05) Obiect cu luciu metalic care reflectă mediul înconjurător - <code>M_Chrome</code></li>
     <li>(0.1) Obiect cu material lucios(care reflectă mediul) pe anumite zone și nelucios pe altele în funcție de un anumit pattern (rezolvarea se va face prin blueprints) - <code>M_Chrome</code></li>
@@ -123,9 +122,26 @@ Acest joc este unul de tip **infinite runner**, in care jucatorul se afla la vol
 </details>
 
 <details>
-  <summary><strong>Etapa 10</strong> (total punctaj: 0)</summary>
+  <summary><strong>Etapa 10</strong> (total punctaj: 0.7-0.8)</summary>
   Cerinte rezolvate:
   <ul>
+    <li>(0.05) Prima pagină cu nume, prenume, grupă, data examenului, și titlu jocului. în josul paginii, numele materiei. Un cuprins către capitole ( în caz că sunt mai multe pagini). Numele capitolelor cerue sunt cele scrise cu bold, culoare neagră. Paginile (dacă sunt mai multe) vor fi numerotate.</li>
+    <li>(0.1) Descrierea detaliată a jocului (nu planul inițial ci doar ce ați reușit să implementați). Ce face jocul, care este povestea (această parte poate conține și fragmente din etapa 0). Poate conține printscreen-uri din joc pentru clarificări</li>
+    <li>(0.05) Specificații tehnice: sistemele de operare pentru care a fost dezvoltat jocul, cât ocupă pe disc, memoria aproximativă de care are nevoie, pachete adiționale care ar trebui instalate, necesită sau nu conexiune la rețea, ce fel de date salvează și aproximativ cât de mare poate ajunge un fișier de salvare, versiunea de Unreal Engine pe care a fost dezvoltat jocul.</li>
+    <li>(0.05) Specificații tematice (necesare pentru eventuala publicare a jocului): categoria/categoriile jocului, motivația alegerii temei jocului, o listă de taguri descriptive, jocul este single sau multiplayer, timpul de joc (estimativ în cate ore poate fi terminat jocul; pentru jocurile nelimitate se va preciza că timpul de joc poate fi oricât de mare), limbile în care jocul este disponibil.</li>
+    <li>(0.1) Acțiuni disponibile. Control. Ce acțiuni avem disponibile în joc și cu ce dispozitive periferice de intrare le putem realiza (mouse, tastatură, joystick etc.), cu ce combinație de taste și butoane. Ce shortcut-uri există. Ce opțiuni are utilizatorul de a-și defini propriile combinații de evenimente de mouse/tastatură pentru diverse acțiuni</li>
+    <li>(0.1) Clasele proprii. Descrierea claselor create în cadrul jocului: rolul lor, proprietățile importante, ce metode implementează, cum sunt integrate în joc. Ce design patterns au fost implementate (și descrierea succintă a fiecărui design pattern).</li>
+    <li>(0.1) Lista de taskuri realizate. Obligatoriu pentru prezentare. Aici vor fi cerințele preluate cu copy-paste din barem, pe care studentul le-a realizat. Lista de cerințe va fi organizată pe categorii și subcategorii exact ca prezentul barem. În dreptul fiecarui task va fi scris și punctajul din barem, iar studentul va face o sumă estimativă a punctelor sub fiecare categorie dar și la final, pentru verificare (baremul e mare și complex și e ușor să se uite ceva la prezentare, cu această masură putem verifica daca nu am sărit nimic).</li>
+    <li>(0.05-0.1) Lista de utilitare folosite. Veți enumera toate utilitare folosite pentru a crea active (modele, texturi, sunete etc.) pentru joc. Veți enumera activele și veți explica pe scurt cum le-ați realizat.</li>
+    <li>(0.05) Lista de pachete externe folosite. Veți enumera toate pachetele adăugate în joc, toate activele preluate din alte surse (imagini,  și în ce context le-ați folosit). Veți oferi și câte un link către pachetul respectiv.</li>
+    <li>(0.05-0.1) Bibliografie. Veți lista carțile, tutorialele (scrise sau video), forumurile de unde ați preluat idei, bucăți de cod/blueprint. Dacă sursa este online, veți scrie si linkul. Pentru fiecare sursă veți preciza ce anume ați preluat de acolo.</li>
+  </ul>
+</details>
 
+<details>
+  <summary><strong>Bonusuri/optionale</strong> (total punctaj: 0.3 + bonus = 0.345)</summary>
+  Cerinte rezolvate:
+  <ul>
+    <li>(0.3 + bonus) Adăugarea unui pachet extern și folosirea a minim un mesh/textură/material din el - <code>Fantastic Village Pack</code>, <code>Muscle Car Pack</code>, <code>Low Poly Car Pack</code></li>
   </ul>
 </details>
